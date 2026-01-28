@@ -1,0 +1,387 @@
+/* Modern Chrome Extension Styling - HaThanh Tools */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 450px;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 500px;
+}
+
+.box-custom {
+  padding: 0;
+  background: #ffffff;
+  margin: 12px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+/* Header Section with Logo */
+.header-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 30px 24px 24px;
+  text-align: center;
+  position: relative;
+}
+
+.logo-container {
+  margin-bottom: 16px;
+  animation: fadeInDown 0.6s ease-out;
+}
+
+.extension-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.extension-logo:hover {
+  transform: scale(1.05) rotate(5deg);
+}
+
+.extension-title {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  letter-spacing: -0.5px;
+  animation: fadeInUp 0.6s ease-out 0.1s both;
+}
+
+.extension-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+/* Description Section */
+.description-section {
+  background: linear-gradient(to bottom, #f8f9ff, #ffffff);
+  padding: 20px 24px;
+  border-bottom: 1px solid #e8ecf7;
+}
+
+.description-text {
+  margin: 0;
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: 500;
+}
+
+.description-text i {
+  color: #667eea;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+/* Input Section */
+.input-section {
+  padding: 24px;
+  background: #ffffff;
+}
+
+.input-field-wrapper {
+  margin-bottom: 20px;
+}
+
+.input-field-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.input-label {
+  display: block;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 8px;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+
+.input-label i {
+  color: #667eea;
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+/* Input Groups */
+.el-input {
+  transition: all 0.3s ease;
+}
+
+.el-input__inner {
+  border: 2px solid #e0e7ff;
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 13px;
+  transition: all 0.3s ease;
+  background: #f8fafc;
+  color: #1e293b;
+  font-family: 'Consolas', 'Monaco', monospace;
+}
+
+.el-input__inner::placeholder {
+  color: #94a3b8;
+  font-style: italic;
+}
+
+.el-input__inner:focus {
+  border-color: #667eea;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  outline: none;
+}
+
+.el-input__inner:disabled {
+  background: #f1f5f9;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+/* Buttons */
+.el-button {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+.el-button--default {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.el-button--default:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.el-button--default:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.el-button--primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+  padding: 14px 32px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.el-button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(102, 126, 234, 0.4);
+}
+
+.el-button--primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 12px rgba(102, 126, 234, 0.3);
+}
+
+.el-button--primary i {
+  margin-right: 8px;
+}
+
+/* Input Group Append (Copy Button Container) */
+.el-input-group__append {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  padding: 0;
+  border-radius: 0 10px 10px 0;
+}
+
+.el-input-group__append .el-button {
+  border-radius: 0 10px 10px 0;
+  padding: 14px 18px;
+  margin: 0;
+  background: transparent;
+  box-shadow: none;
+  height: 100%;
+}
+
+.el-input-group__append .el-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: none;
+}
+
+.el-input-group__append .el-button:active {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Icons */
+.fa-copy {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+i[class*="fa-"] {
+  font-style: normal;
+  display: inline-block;
+}
+
+/* Keep element-icons support for other icons */
+i[class*="el-icon-"] {
+  font-style: normal;
+  display: inline-block;
+}
+
+/* Action Section */
+.action-section {
+  padding: 0 24px 24px;
+  background: #ffffff;
+}
+
+/* Footer Section */
+.footer-section {
+  background: linear-gradient(to top, #f8f9ff, #ffffff);
+  padding: 16px 24px;
+  border-top: 1px solid #e8ecf7;
+  text-align: center;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.footer-text i {
+  color: #10b981;
+  margin-right: 6px;
+}
+
+/* Loading Overlay */
+.loading-data {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  display: none;
+  z-index: 9999;
+}
+
+.loading-data.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-data .icon-loading {
+  color: #667eea;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Input Group Styling */
+.el-input-group {
+  display: flex;
+  align-items: stretch;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.el-input-group .el-input__inner {
+  border-radius: 12px 0 0 12px;
+  border-right: none;
+  margin: 0;
+}
+
+.el-input-group.el-input-group--append .el-input__inner {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Hover Effects */
+.el-input:hover .el-input__inner:not(:disabled) {
+  border-color: #a5b4fc;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth Transitions */
+* {
+  transition: all 0.2s ease;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+
+  .box-custom {
+    margin: 8px;
+  }
+}

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HaThanh - Get IMEI & Cookies</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/popup.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <div id="custom" class="box-custom">
+      <!-- Logo Section -->
+      <div class="header-section">
+        <div class="logo-container">
+          <img
+            src="./images/icon-128.png"
+            alt="HaThanh Logo"
+            class="extension-logo"
+          />
+        </div>
+        <h1 class="extension-title">HaThanh Tools</h1>
+        <p class="extension-subtitle">Công cụ hỗ trợ chuyên nghiệp</p>
+      </div>
+
+      <!-- Description Section -->
+      <div class="description-section">
+        <p class="description-text">
+          <i class="fa fa-info-circle"></i>
+          Công cụ hỗ trợ lấy IMEI & Cookie của tài khoản Zalo
+        </p>
+      </div>
+
+      <!-- Input Fields Section -->
+      <div class="input-section">
+        <div class="input-field-wrapper">
+          <label class="input-label"> <i class="fa fa-mobile"></i> IMEI </label>
+          <div
+            id="imei-div"
+            class="el-input is-disabled el-input-group el-input-group--append"
+          >
+            <input
+              id="imei-input"
+              type="text"
+              disabled="disabled"
+              autocomplete="off"
+              class="el-input__inner"
+              placeholder="IMEI sẽ hiển thị tại đây..."
+            />
+            <div class="el-input-group__append">
+              <button
+                id="btn-copy-1"
+                type="button"
+                class="el-button el-button--default"
+                title="Copy IMEI"
+              >
+                <i class="fa fa-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-field-wrapper">
+          <label class="input-label">
+            <i class="fa fa-cookie-bite"></i> Cookies
+          </label>
+          <div
+            id="cookies-div"
+            class="el-input is-disabled el-input-group el-input-group--append"
+          >
+            <input
+              id="cookies-input"
+              type="text"
+              disabled="disabled"
+              autocomplete="off"
+              class="el-input__inner"
+              placeholder="Cookies sẽ hiển thị tại đây..."
+            />
+            <div class="el-input-group__append">
+              <button
+                id="btn-copy-2"
+                type="button"
+                class="el-button el-button--default"
+                title="Copy Cookies"
+              >
+                <i class="fa fa-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Button Section -->
+      <div class="action-section">
+        <button
+          type="button"
+          id="refresh-button"
+          class="el-button el-button--primary"
+        >
+          <i class="fa fa-sync-alt"></i> Refresh Page
+        </button>
+      </div>
+
+      <!-- Footer Section -->
+      <div class="footer-section">
+        <p class="footer-text">
+          <i class="fa fa-shield-alt"></i> Bảo mật & An toàn
+        </p>
+      </div>
+    </div>
+
+    <div id="loading_data" class="loading-data">
+      <i class="icon-loading fa fa-spinner fa-spin fa-3x fa-fw"></i>
+    </div>
+    <script src="./js/custom.js"></script>
+    <script src="./js/popup.js"></script>
+  </body>
+</html>
